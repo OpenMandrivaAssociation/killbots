@@ -1,5 +1,5 @@
 Name:		killbots
-Version:	4.12.4
+Version:	4.13.2
 Release:	1
 Epoch:		1
 Summary:	KDE port of the classic BSD console game robots
@@ -40,6 +40,9 @@ only weapons against the never-ending stream of mindless automatons.
 
 
 %changelog
+* Wed Jun 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.13.2-1
+- New version 4.13.2
+
 * Wed Apr 02 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.4-1
 - New version 4.12.4
 
