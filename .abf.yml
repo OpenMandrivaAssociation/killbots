@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   killbots-15.08.0.tar.xz: 47faaec809234564787d851b4228b888e326971d
+sources:
+  killbots-15.08.1.tar.xz: aeda6ab3c773df810a3b955ec6334f8423401cc2

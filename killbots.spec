@@ -1,6 +1,6 @@
 Name:		killbots
-Version:	15.08.0
-Release:	2
+Version:	15.08.1
+Release:	1
 Epoch:		1
 Summary:	KDE port of the classic BSD console game robots
 Group:		Graphical desktop/KDE
@@ -21,6 +21,7 @@ BuildRequires:	cmake(KF5XmlGui)
 BuildRequires:	cmake(Qt5Core)
 BuildRequires:	cmake(Qt5Gui)
 BuildRequires:	cmake(Qt5Widgets)
+BuildRequires:	cmake(Qt5Test)
 
 %description
 Killbots is a simple game of evading killer robots.
