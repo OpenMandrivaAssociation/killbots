@@ -1,5 +1,5 @@
 Name:		killbots
-Version:	15.08.3
+Version:	15.12.0
 Release:	1
 Epoch:		1
 Summary:	KDE port of the classic BSD console game robots
