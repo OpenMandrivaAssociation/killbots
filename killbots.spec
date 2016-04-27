@@ -1,12 +1,12 @@
 Name:		killbots
-Version:	15.12.3
+Version:	16.04.0
 Release:	1
 Epoch:		1
 Summary:	KDE port of the classic BSD console game robots
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://www.kde.org/applications/games/killbots/
-Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
+Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
