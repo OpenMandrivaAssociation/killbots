@@ -25,6 +25,7 @@ BuildRequires:	cmake(Qt5Widgets)
 BuildRequires:	cmake(Qt5Test)
 BuildRequires:	cmake(KF5Notifications)
 BuildRequires:	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5Crash)
 
 %description
 Killbots is a simple game of evading killer robots.
