@@ -1,12 +1,12 @@
 Name:		killbots
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 Epoch:		1
 Summary:	KDE port of the classic BSD console game robots
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://www.kde.org/applications/games/killbots/
-Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
@@ -37,11 +37,10 @@ quantity rather than quality and as a result the robots are severely lacking
 in intelligence. Your superior wit and a fancy teleportation device are your
 only weapons against the never-ending stream of mindless automatons.
 
-%files
+%files -f %{name}.lang
 %{_bindir}/killbots
 %{_datadir}/applications/org.kde.killbots.desktop
 %{_datadir}/config.kcfg/killbots.kcfg
-%{_docdir}/*/*/killbots
 %{_iconsdir}/hicolor/*/apps/killbots.*
 %{_datadir}/killbots
 %{_datadir}/kxmlgui5/killbots
@@ -57,3 +56,4 @@ only weapons against the never-ending stream of mindless automatons.
 
 %install
 %ninja_install -C build
+%find_lang %{name} --with-html
