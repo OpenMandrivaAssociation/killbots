@@ -1,3 +1,5 @@
+%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
+
 Name:		killbots
 Version:	17.04.0
 Release:	1
@@ -6,7 +8,7 @@ Summary:	KDE port of the classic BSD console game robots
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://www.kde.org/applications/games/killbots/
-Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
