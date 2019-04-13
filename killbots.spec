@@ -1,8 +1,8 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		killbots
-Version:	 18.12.3
-Release:	2
+Version:	 19.04.0
+Release:	1
 Epoch:		1
 Summary:	KDE port of the classic BSD console game robots
 Group:		Graphical desktop/KDE
@@ -45,6 +45,7 @@ only weapons against the never-ending stream of mindless automatons.
 %{_datadir}/config.kcfg/killbots.kcfg
 %{_iconsdir}/hicolor/*/apps/killbots.*
 %{_datadir}/killbots
+%{_datadir}/metainfo/org.kde.killbots.appdata.xml
 
 #------------------------------------------------------------------------------
 
