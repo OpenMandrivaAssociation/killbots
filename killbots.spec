@@ -2,7 +2,7 @@
 
 Name:		killbots
 Version:	22.12.3
-Release:	1
+Release:	2
 Epoch:		1
 Summary:	KDE port of the classic BSD console game robots
 Group:		Graphical desktop/KDE
