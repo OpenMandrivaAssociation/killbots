@@ -1,8 +1,8 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		plasma6-killbots
-Version:	24.01.90
-Release:	2
+Version:	24.01.95
+Release:	1
 Summary:	KDE port of the classic BSD console game robots
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
