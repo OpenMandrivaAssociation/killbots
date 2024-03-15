@@ -5,7 +5,7 @@
 
 Name:		plasma6-killbots
 Version:	24.02.0
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 Summary:	KDE port of the classic BSD console game robots
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
