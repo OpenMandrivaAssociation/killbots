@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		plasma6-killbots
-Version:	24.05.2
+Version:	24.08.0
 Release:	%{?git:0.%{git}.}1
 Summary:	KDE port of the classic BSD console game robots
 Group:		Graphical desktop/KDE
@@ -52,6 +52,7 @@ only weapons against the never-ending stream of mindless automatons.
 %{_iconsdir}/hicolor/*/apps/killbots.*
 %{_datadir}/killbots
 %{_datadir}/metainfo/org.kde.killbots.appdata.xml
+%{_datadir}/qlogging-categories6/killbots.renamecategories
 %{_datadir}/qlogging-categories6/killbots.categories
 
 #------------------------------------------------------------------------------
