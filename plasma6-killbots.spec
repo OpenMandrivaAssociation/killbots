@@ -9,7 +9,7 @@ Release:	%{?git:0.%{git}.}1
 Summary:	KDE port of the classic BSD console game robots
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
-URL:		http://www.kde.org/applications/games/killbots/
+URL:		https://www.kde.org/applications/games/killbots/
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/games/killbots/-/archive/%{gitbranch}/killbots-%{gitbranchd}.tar.bz2#/killbots-%{git}.tar.bz2
 %else
