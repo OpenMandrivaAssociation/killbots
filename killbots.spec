@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		killbots
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Summary:	KDE port of the classic BSD console game robots
 Group:		Graphical desktop/KDE
@@ -35,6 +35,11 @@ BuildRequires:	cmake(KF6Notifications)
 BuildRequires:	cmake(KF6DocTools)
 BuildRequires:	cmake(KF6Crash)
 
+%rename plasma6-killbots
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 Killbots is a simple game of evading killer robots.
 
@@ -45,7 +50,7 @@ quantity rather than quality and as a result the robots are severely lacking
 in intelligence. Your superior wit and a fancy teleportation device are your
 only weapons against the never-ending stream of mindless automatons.
 
-%files -f killbots.lang
+%files -f %{name}.lang
 %{_bindir}/killbots
 %{_datadir}/applications/org.kde.killbots.desktop
 %{_datadir}/config.kcfg/killbots.kcfg
@@ -54,18 +59,3 @@ only weapons against the never-ending stream of mindless automatons.
 %{_datadir}/metainfo/org.kde.killbots.appdata.xml
 %{_datadir}/qlogging-categories6/killbots.renamecategories
 %{_datadir}/qlogging-categories6/killbots.categories
-
-#------------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n killbots-%{?git:%{gitbranchd}}%{!?git:%{version}}
-
-%build
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-%ninja
-
-%install
-%ninja_install -C build
-%find_lang killbots --with-html
